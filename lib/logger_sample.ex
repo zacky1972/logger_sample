@@ -1,18 +1,7 @@
 defmodule LoggerSample do
-  @moduledoc """
-  Documentation for LoggerSample.
-  """
+  require LoggerSample.Macro
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> LoggerSample.hello
-      :world
-
-  """
   def hello do
-    :world
+    LoggerSample.Macro.test()
   end
 end
