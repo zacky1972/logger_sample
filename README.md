@@ -1,6 +1,7 @@
 # LoggerSample
 
-**TODO: Add description**
+This is a sample experimental implemenation in Elixir and Nerves that proves that a custom Logger that is activated only on compile time using a macro that puts info out into a log file that is recorded by the Logger will disabled on runtime on a Nerves target. 
+
 
 ## Targets
 
