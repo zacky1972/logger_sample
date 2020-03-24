@@ -40,15 +40,11 @@ config :nerves_firmware_ssh,
 # Configure the network using vintage_net
 # See https://github.com/nerves-networking/vintage_net for more information
 config :vintage_net,
-  regulatory_domain: "US",
+  regulatory_domain: "JP",
   config: [
-    {"usb0", %{type: VintageNetDirect}},
-    {"eth0",
-     %{
-       type: VintageNetEthernet,
-       ipv4: %{method: :dhcp}
-     }},
-    {"wlan0", %{type: VintageNetWiFi}}
+    # {"usb0", %{type: VintageNetDirect}},
+    {"eth0", %{type: VintageNetDirect}},
+    # {"wlan0", %{type: VintageNetWiFi}}
   ]
 
 config :mdns_lite,
